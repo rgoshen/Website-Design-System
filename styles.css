@@ -6,6 +6,10 @@
   --headings-color: #ac3b61;
 }
 
+html{
+  font-size: 16px;
+}
+
 /* Nav-bar */
 nav {
   background-color: var(--navBar-color);
