@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js">
+<html lang="en"
+      class="no-js">
   <!--<![endif]-->
 
   <head>
@@ -17,70 +18,167 @@
           content="width=device-width, initial-scale=1" />
     <link rel="stylesheet"
           href="./styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Roboto:wght@400;700&family=Source+Serif+Pro:wght@400;700&family=Ubuntu:wght@400;700&display=swap"
+          rel="stylesheet" />
+
+    <!-- Other JS -->
+    <script src="https://kit.fontawesome.com/48ae993cb3.js"
+            crossorigin="anonymous"></script>
   </head>
 
   <body>
     <header id="header">
       <h1 id="title">My Website Style Guide</h1>
+    </header>
+
+    <main>
       <nav>
-        <ul>
+        <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
-          <li><a href="#colors-container">Colors</a></li>
-          <li><a href="#fonts-container">Fonts</a></li>
-          <li><a href="#types-container">Types</a></li>
-          <li><a href="#">Buttons</a></li>
+          <li><a href="#colors">Colors</a></li>
+          <li><a href="#fonts">Fonts</a></li>
+          <li><a href="#styles">Styles</a></li>
         </ul>
       </nav>
-    </header>
-    <main>
       <div></div>
-      <div id="main-container">
+      <div id="main">
+        <div class="row">
+          <h2 id="colors">Colors</h2>
+        </div>
         <div id="colors-container">
-          <h2>Colors</h2>
-          <div class="row">
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col"></div>
+          <div class="panel">
+            <div class="panel-header zinnwaldite">
+              <p class="center-text">
+                Hex: #edc7b7 <br />
+                RGB: 237, 199, 183
+              </p>
+            </div>
+            <div class="panel-footer">
+              <p class="panel-label">Zinnwaldite</p>
+              <p>Use: accent</p>
+            </div>
           </div>
-          <div class="row">
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col"></div>
+          <div class="panel">
+            <div class="panel-header bizarre">
+              <p class="center-text">
+                Hex: #eee2dc <br />
+                RGB: 238, 226, 220
+              </p>
+            </div>
+            <div class="panel-footer">
+              <p class="panel-label">Bizarre</p>
+              <p>Use: main background color</p>
+            </div>
           </div>
-        </div>
-        <div id="fonts-container">
-          <h2>Fonts</h2>
-          <div class="row">
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col"></div>
+          <div class="panel">
+            <div class="panel-header pink-swan">
+              <p class="center-text">
+                Hex: #bab2b5 <br />
+                RGB: 186, 178, 181
+              </p>
+            </div>
+            <div class="panel-footer">
+              <p class="panel-label">Pink Swan</p>
+              <p>Use: nav-bar color color</p>
+            </div>
           </div>
-          <div class="row">
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col"></div>
+          <div class="panel">
+            <div class="panel-header chathams-blue"
+                 style="color: linen;">
+              <p class="center-text">
+                Hex: #123c69 <br />
+                RGB: 18, 60, 105
+              </p>
+            </div>
+            <div class="panel-footer">
+              <p class="panel-label">Chathams Blue</p>
+              <p>Use: paragraph text color</p>
+            </div>
           </div>
-        </div>
-        <div id="types-container">
-          <h2>Header Styles</h2>
-          <div class="row">
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col"></div>
-          </div>
-          <div class="row">
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col"></div>
+          <div class="panel">
+            <div class="panel-header night-shadz">
+              <p class="center-text">
+                Hex: #ac3b61 <br />
+                RGB: 172, 59, 97
+              </p>
+            </div>
+            <div class="panel-footer">
+              <p class="panel-label">Night Shadz</p>
+              <p>Use: main headings</p>
+            </div>
           </div>
         </div>
       </div>
+      <h2 id="fonts">Fonts</h2>
+      <div id="fonts-container">
+        <div class="panel">
+          <p class="panel-label fira-sans">Fira Sans</p>
+          <p class="fira-sans regular">et molestie ac feugiat</p>
+          <p class="fira-sans bold">et molestie ac feugiat</p>
+          <p class="fira-sans italic">et molestie ac feugiat</p>
+        </div>
+        <div class="panel">
+          <p class="panel-label roboto">Roboto</p>
+          <p class="roboto regular">et molestie ac feugiat</p>
+          <p class="roboto bold">et molestie ac feugiat</p>
+          <p class="roboto italic">et molestie ac feugiat</p>
+        </div>
+        <div class="panel">
+          <p class="panel-label source-pro">Source Serif Pro</p>
+          <p class="source-pro regular">et molestie ac feugiat</p>
+          <p class="source-pro bold">et molestie ac feugiat</p>
+          <p class="source-pro italic">et molestie ac feugiat</p>
+        </div>
+        <div class="panel">
+          <p class="panel-label ubuntu">Ubuntu</p>
+          <p class="Ubuntu regular">et molestie ac feugiat</p>
+          <p class="Ubuntu bold">et molestie ac feugiat</p>
+          <p class="Ubuntu italic">et molestie ac feugiat</p>
+        </div>
+      </div>
+      <h2 id="styles">Styles</h2>
+      <div id="styles-container">
+        <div class="panel">
+          <h1 class="styles-header">H1: Main page heading</h1>
+          <ul class="panel-list styles-body">
+            <li>Font-weight: 700 (bold)</li>
+            <li>Font-size: 26px</li>
+            <li>Font-family: Ubuntu</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h1 class="styles-header">H2: Subheading</h1>
+          <ul class="panel-list styles-body">
+            <li>Font-weight: 500</li>
+            <li>Font-size: 18px</li>
+            <li>Font-family: Source Serif Pro</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <p class="styles-header">P: Paragraph text</p>
+          <ul class="panel-list">
+            <li>Font-weight: 400</li>
+            <li>Font-size: 14px</li>
+            <li>Font-family: Fira Sans</li>
+          </ul>
+        </div>
+      </div>
     </main>
-    <footer id="footer"></footer>
-
-    <script src=""
-            async
-            defer></script>
+    <footer id="footer">
+      <div class="copyright">
+        Copyright &copy; 2020
+        <ul class="social-icons">
+          <li>
+            <a class="facebook"
+               href="#"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li>
+            <a class="linkedin"
+               href="#"><i class="fa fa-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 
 </html>
