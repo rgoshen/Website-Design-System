@@ -1,19 +1,271 @@
-:root{
-    
+:root {
+  --main-color: #eee2dc;
+  --accent-color: #edc7b7;
+  --navBar-color: #bab2b5;
+  --text-color: #123c69;
+  --headings-color: #ac3b61;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #1D2731;
+/* Nav-bar */
+nav {
+  background-color: var(--navBar-color);
+  margin-bottom: 50px;
+  border: 2px solid var(--navBar-color);
+  border-radius: 5px;
+  position: sticky;
+  top: 0;
+}
+
+ul.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul.nav-list li {
+  border-right: 1px solid var(--accent-color);
+}
+
+ul.nav-list li a {
+  display: block;
+  color: var(--text-color);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.nav-list li a:hover {
+  background-color: darkgray;
+}
+
+@media screen and (max-width: 417px) {
+  ul.nav-list li.right,
+  ul.nav-list li {
+    float: none;
+  }
+  ul.nav-list li {
+    border-style: none;
+  }
+}
+
+/* Main page */
+body {
+  background-color: var(--main-color);
+  color: var(--text-color);
+  font-family: "Ubuntu", sans-serif;
+}
+
+h1,
+h2 {
+  color: var(--headings-color);
+  text-align: center;
+}
+
+h1 {
+  font-family: "Ubuntu", sans-serif;
+}
+
+h2 {
+  font-family: "Source Serif Pro", serif;
+}
+
+p {
+  font-family: "Fira Sans", sans-serif;
 }
 
 li {
-    float: left;
+  float: left;
 }
 
-li a {
+#colors-container,
+#fonts-container,
+#styles-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  border: 2px solid var(--accent-color);
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 417px) {
+  #colors-container,
+  #fonts-container,
+  #styles-container {
+    border-style: none;
+  }
+}
+
+.panel {
+  background-color: linen;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 250px;
+  height: 250px;
+  margin: 20px;
+  /* padding: 10px; */
+  text-align: center;
+}
+
+ul.panel-list {
+  margin-left: 20px;
+}
+
+.panel-header {
+  margin-top: 0;
+  height: 60%;
+}
+
+.panel-header > p {
+  margin-top: 0;
+}
+
+.panel-label {
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+.panel-footer {
+  line-height: 0.75rem;
+}
+
+.center-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+
+/* Panels */
+.zinnwaldite {
+  background-color: var(--accent-color);
+}
+
+.bizarre {
+  background-color: var(--main-color);
+}
+
+.pink-swan {
+  background-color: var(--navBar-color);
+}
+
+.chathams-blue {
+  background-color: var(--text-color);
+}
+
+.night-shadz {
+  background-color: var(--headings-color);
+}
+
+.fira-sans {
+  font-family: "Fira Sans", sans-serif;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.source-pro {
+  font-family: "Source Serif Pro", serif;
+}
+
+.ubuntu {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.regular {
+  font-style: regular;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.styles-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+}
+
+.styles-body {
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer */
+footer {
+  background-color: var(--navBar-color);
+  padding: 10px;
+  height: 60px;
+  border: 2px solid var(--navBar-color);
+  border-radius: 5px;
+}
+
+.social-icons {
+  list-style-type: none;
+  float: right;
+}
+
+ul.social-icons li {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.social-icons li.title {
+  margin-right: 15px;
+  text-transform: uppercase;
+  color: #96a2b2;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+ul.social-icons li a {
+  background-color: var(--navBar-color);
+  color: #818a91;
+  font-size: 16px;
+  display: block;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+  color: #fff;
+  background-color: #29aafe;
+}
+.social-icons.size-sm a {
+  line-height: 34px;
+  height: 34px;
+  width: 34px;
+  font-size: 14px;
+}
+.social-icons a.facebook:hover {
+  background-color: #3b5998;
+}
+
+.social-icons a.linkedin:hover {
+  background-color: #007bb6;
+}
+
+@media (max-width: 417px) {
+  .social-icons li.title {
     display: block;
-    padding: 8px;
+    margin-right: 0;
+    font-weight: 600;
+  }
 }
